@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GitHub user search</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2 class="logo">GitHub Search</h2>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item">
+              <a href="mailto:stephenfelix074@gmail.com">contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://about.me/stephenfelix">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="main">
+        <form id="search" action="" method="post" accept-charset="utf-8">
+          <label for="user">Enter a GitHub Username</label>
+          <input
+            type="search"
+            id="user"
+            name="user"
+            placeholder="GitHub Username"
+          />
+          <button type="submit" style="margin-top: 1.5rem">Get info</button>
+          <div class="error"></div>
+          <div class="load">
+            <div></div>
+          </div>
+        </form>
+
+        <div id="result">
+          <div id="avatar">
+            <img src="" alt="" height="200" width="200" />
+            <h2 id="full_name"></h2>
+            <h4 id="username"></h4>
+          </div>
+
+          <div id="follow">
+            <div>
+              <span>Followers</span>
+              <span id="followers"></span>
+            </div>
+            <div>
+              <span>Following</span>
+              <span id="following"></span>
+            </div>
+          </div>
+
+          <div id="repo">
+            <div>
+              <span>Repos</span>
+              <span id="repos"></span>
+            </div>
+            <div>
+              <span>Gists</span>
+              <span id="gists"></span>
+            </div>
+          </div>
+
+          <div id="links">
+            <button type="button" id="github_page">
+              <a target="_blank"> More info </a>
+            </button>
+            or
+            <button type="button" id="refresh">Search again</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="socials">
+          <a
+            href="https://facebook.com/GineerMeek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/GinMeek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+          <a
+            href="https://github.com/GinMeek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/gineermeek"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="https://www.limkedin.com/in/stephenafelix"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <p>Made with <span class="heart">&hearts;</span> by GineerMeek</p>
+      </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
